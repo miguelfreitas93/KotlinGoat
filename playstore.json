@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "api-123-123",
+  "private_key_id": "124312safdsfg123",
+  "private_key": "-----BEGIN PRIVATE KEY-----\n1343413415/AOiYOI807d88\n4E3ZDHMqjFwGKs5G+K+wQWX4+c9FG9vVhuq5pg3ZSBPgN39/loJ+aNmmJ0ziP/UQ\n5RAPq8pEijr5QwIFgSzbO4490LnPufU2RPHhwhKJUZYsGNrZTAmNQNQj9N7mDfy/\nr+zhy1hRAqHHg+xWYY5T1/RicJAsqOnF4PksFunMgflWEkvELfUMYD+phes7xNCO\nFpDQwfMQWnFCxvDSfu/8v2PxzNZDvU/1324234+LbLYEQWZkD7b9L\nTsWRD3qGV6/134\nd7Od6L0hAgMBAAECggEAANPCW3KoV4eu/134/8huE6daZbZK3n\nUl/134+Ur06VRgDH8GRF\nHtT+tczoL/TePJ1se6B+143/134\n143+bzjBIR1y6fZAB7J53r9LOPB0+x2T7zuJBuaW9n3dEf7A\nBUaqkwp/143/134+4TrMJyb6qZfrQ+f4s9bQ\nXZIFa7WMeKTrQ8c/KWkXwFOUTA8KVL1TM+cKJxoLQQKBgQDmp90c+lXqbl+3W6wu\n1324+7PVw/lzoQgcFqIUpSmmdopJXCWYC5D\nkwAomky+z+134\noI7vywFWEK3sULVytctDCMKgwQKBgQDT/apQSrG40ueme3hLrsysbiPZb+f039d8\n134\nyYxBbepXi4mubSqbNjfL+134+CCO1ahxrN/ojyD6jRtZwSco7PNdKk8Z\n3/SYN4rUYQKBgQCldDZ9SemFX6VTXvQUma5FSDRx46kWBmyk3wKCwi0+TiFZyARv\nfWmN27LwswI+TrnyXeJ525UNvOiVResJ2BHeDkkM+xAIDUodmQ//7jf/OEiz6Q62\nBFyrCJB74myiEWkyVOyxwHZBCmAjiB1TWpsN0b5koVRRVtfBsDxdGpSaQQKBgE2T\nw7LUUstPKwSqpHAVzMLBH49fu2PKUoIesEeynQvhamitF5pWPTlZz0LdE8T+f/Ag\nfFUjrUqAw+a5ceQeiAoyeFobo3HiKzVL7262OY7F+qGBQ5k/MxYLSS385fhJbOZe\nzBNZLuZCnEHvtuLZpoum+pyocbrDU+UlJs5ZbQ2hAoGBAL7TjuFwZbyJhlQixoyB\n+90CxfMDKgPKfLlpqawV2tfsQs1Q53XsHorh0ZmV9JpAc3LzU98Ily3uoD6WrgCP\nxCI5vOWUok/BRWktAICV5rhOIAPCjl5v6s3419lt7n+jwsgCPFILU/v53qfhXYee\njlsd4ZuKfGGibhoaVmRKMGjK\n-----END PRIVATE KEY-----\n",
+  "client_email": "bitrise@api-234-dsaf.iam.gserviceaccount.com",
+  "client_id": "141341134134",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bitrise%40api-1432143-134.iam.gserviceaccount.com"
+}

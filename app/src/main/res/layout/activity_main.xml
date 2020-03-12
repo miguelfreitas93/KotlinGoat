@@ -1,18 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/url"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:ems="10"
+        android:text="URL"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="41dp" />
+    <!-- Missing Input Type -->
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Username"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="106dp" />
+    <!-- Missing Input Type -->
+    <!-- Keyboard Cache Information Leak -->
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Password"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="171dp" />
+    <!-- Missing Input Type -->
+    <!-- Keyboard Cache Information Leak -->
+
+    <EditText
+        android:id="@+id/path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Path"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="242dp" />
+    <!-- Missing Input Type -->
+
+    <EditText
+        android:id="@+id/integer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Integer"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="312dp" />
+    <!-- Missing Input Type -->
+
+    <EditText
+        android:id="@+id/clazz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Class"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="437dp" />
+    <!-- Missing Input Type -->
+
+    <EditText
+        android:id="@+id/xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="XML"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="374dp" />
+    <!-- Missing Input Type -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
