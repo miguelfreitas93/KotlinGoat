@@ -55,6 +55,7 @@ A damn vulnerable Kotlin Android Application
         - Exported Content Provider Without Permissions (2 results - AndroidManifest.xml)
         - Overly Permitted Domain (1 result - network_security_config.xml)
         - Missing Certificate Pinning (1 result - network_security_config.xml)
+        - Hardcoded Key (2 results - AndroidManifest.xml)
     - Low:
         - Missing Input Type (7 results - activity_main.xml)
         - Allowed Backup (2 results - AndroidManifest.xml)

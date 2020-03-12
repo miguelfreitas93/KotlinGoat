@@ -5,7 +5,7 @@ import android.content.ContentValues
 import android.database.Cursor
 import android.net.Uri
 
-class ExportedContentProvider : ContentProvider() {
+class ExportedContentProviderWithoutPermissions : ContentProvider() {
     override fun insert(uri: Uri, values: ContentValues?): Uri? {
         TODO("Not yet implemented")
     }
