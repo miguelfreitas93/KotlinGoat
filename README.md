@@ -1,6 +1,6 @@
 # KotlinGoat
 
-A vulnerable Kotlin Android Application
+A damn vulnerable Kotlin Android Application
 
 # Vulnerabilities
 
