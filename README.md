@@ -4,6 +4,24 @@ A damn vulnerable Kotlin Android Application
 
 # Vulnerabilities
 
+- Kotlin:
+    - High:
+
+    - Medium:
+
+    - Low:
+        - No Installer Verification Implemented (1 result - MainActivity.kt)
+        - Missing Rooted Device Check (1 result - MainActivity.kt)
+        - Missing Device Lock Verification (1 result - MainActivity.kt)
+        - Screen Caching (1 result - MainActivity.kt)
+- Other:
+    - Medium:
+        - Google Play Store Config Files in Repository (1 result)
+        - Keystore Files in Repository (1 result)
+        - Properties Files in Repository (2 results)
+        - Hardcoded Password (2 results - local.properties)
+        - Hardcoded Cryptographic Key (3 results - local.properties)
+        
 - Gradle:
     - High:
         - Stored Dependency Injection (1 result - build.gradle)
@@ -12,7 +30,7 @@ A damn vulnerable Kotlin Android Application
         - Process Control (1 result - build.gradle)
         - Manifest Variable Binding Privacy Violation (1 result - build.gradle)
         - Build Config Privacy Violation (3 results - build.gradle)
-        - Path Traversal (2 results - build.gradle)
+        - Path Traversal (1 result - build.gradle)
         - Hardcoded Password (2 results - build.gradle)
         - Proguard Not in Use (2 results - build.gradle)
         - Proguard Disabled (2 results - build.gradle)
@@ -23,8 +41,9 @@ A damn vulnerable Kotlin Android Application
         - Debuggable RenderScript Code (2 results - build.gradle)
         - Missing Signing Configuration (2 results - build.gradle)
         - Minify Disabled - Dead Code (2 results - build.gradle)
-        - Unhandled Exception (6 results - build.gradle)
+        - Unhandled Exception (4 results - build.gradle)
         - Stored Path Traversal (1 result - build.gradle)
+        
 - XML:
     - High:
         - Malware Injection into File System (1 result - AndroidManifest.xml)
@@ -43,21 +62,6 @@ A damn vulnerable Kotlin Android Application
         - Debuggable App (1 result - AndroidManifest.xml)
         - Background Process Running (1 result - AndroidManifest.xml)
         - Keyboard Cache Information Leak (2 results - activity_main.xml)
-- Kotlin:
-    - High:
-
-    - Medium:
-
-    - Low:
-        - No Installer Verification Implemented (1 result)
-        - Missing Rooted Device Check (1 result)
-        - Missing Device Lock Verification (1 result)
-        - Screen Caching (1 result)
-- Other:
-    - Medium:
-        - Google Play Store Config Files in Repository (1 result)
-        - Keystore Files in Repository (1 result)
-        - Properties Files in Repository (2 results)
 
 
 # License

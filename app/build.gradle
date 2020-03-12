@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 Properties props = new Properties()
-props.load(new FileInputStream(new File(System.getenv("localPath")))) // Path Traversal, Unhandled Exception
+props.load(new FileInputStream(new File("local.properties"))) // Unhandled Exception
 
 android {
     compileSdkVersion 29
@@ -36,9 +36,9 @@ android {
     signingConfigs {
         debug {
             keyAlias "test"
-            keyPassword System.getenv("keyPassword") // Unhandled Exception
-            storeFile file(System.getenv("keystorePath")) // Path Traversal, Unhandled Exception
-            storePassword System.getenv("storePassword") // Unhandled Exception
+            keyPassword props["keyPassword"]
+            storeFile file(props["keystorePath"]) // Path Traversal, Unhandled Exception
+            storePassword props["storePassword"]
         }
         release {
             keyAlias "test"
