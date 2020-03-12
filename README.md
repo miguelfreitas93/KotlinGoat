@@ -8,7 +8,7 @@ A damn vulnerable Kotlin Android Application
     - High:
 
     - Medium:
-
+        - Privacy Violation (X results - PrivacyViolation.kt)
     - Low:
         - No Installer Verification Implemented (1 result - MainActivity.kt)
         - Missing Rooted Device Check (1 result - MainActivity.kt)
