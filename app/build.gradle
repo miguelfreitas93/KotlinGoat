@@ -10,7 +10,7 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "miguel.freitas.kotlingoat"
-        minSdkVersion 14 // Insecure SDK Version
+        minSdkVersion 16 // Insecure SDK Version
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -67,10 +67,14 @@ android {
             // Missing Signing Configuration
         }
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 }
 
 println(System.getenv("keyPassword"))//Privacy Violation, Unhandled Exception
-println(props["password"])//Privacy Violation
+println(props["storePassword"])//Privacy Violation
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar']) // Process Control
@@ -78,6 +82,35 @@ dependencies {
     implementation props["myDependency"] // Stored Dependency Injection
     implementation 'androidx.core:core-ktx:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    //REST Client Libraries
+        implementation 'com.squareup.retrofit2:retrofit:2.7.1' //Retrofit
+        implementation 'com.squareup.moshi:moshi-kotlin:1.9.2' //Moshi
+        debugImplementation 'com.readystatesoftware.chuck:library:1.1.0' //Chuck
+        releaseImplementation 'com.readystatesoftware.chuck:library-no-op:1.1.0' //Chuck
+        implementation ("com.github.bumptech.glide:glide:4.11.0") { // Glide
+            exclude group: "com.android.support"
+        }
+    //Logging
+        implementation 'com.jakewharton.timber:timber:4.7.1' // Timber
+        implementation 'com.bugsnag:bugsnag-android-gradle-plugin:4.7.4' // BugSnag
+        implementation 'com.instabug.library:instabug:9.0.5' // Instabug
+        implementation 'com.google.firebase:firebase-crashlytics:17.0.0-beta01' // Firebase Crashalytics
+        implementation('com.crashlytics.sdk.android:crashlytics:2.10.1@aar') { // Fabric, Crashalytics
+            transitive = true
+        }
+        implementation 'org.slf4j:slf4j-android:1.7.30' // SLF4J Android
+        implementation 'de.mindpipe.android:android-logging-log4j:1.0.3' // Android Log4J
+    // Database
+        implementation "androidx.room:room-runtime:2.2.4" // Room
+        annotationProcessor "androidx.room:room-compiler:2.2.4" // Room
+    implementation 'com.github.satyan:sugar:1.5' // Sugar ORM
+        implementation "com.squareup.sqldelight:android-driver:1.2.2" // SQL Delight
+        implementation 'org.dizitart:nitrite:3.3.0' // Nitrite
+        implementation 'com.awesomedroidapps:inappstoragereader:1.0.2' // AppDataReader
+        implementation 'org.greenrobot:greendao:3.2.2' //Green DAO
+        implementation 'com.github.dkharrat.nexusdata:nexusdata:0.2.1' // Nexus Data
+
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
