@@ -22,17 +22,12 @@ A damn vulnerable Kotlin Android Application
         - Missing Device Lock Verification (1 result - MainActivity.kt)
         - Screen Caching (1 result - MainActivity.kt)
         - Passwords In Comments (16 results - PasswordsInComments.kt)
-- Other:
-    - Medium:
-        - Google Play Store Config Files in Repository (1 result)
-        - Keystore Files in Repository (1 result)
-        - Properties Files in Repository (2 results)
-        - Hardcoded Password (2 results - local.properties)
-        - Hardcoded Cryptographic Key (3 results - local.properties)
+        
 - C++:
     - Medium:
         - Hardcoded Password (1 result - hello.c)
         - Hardcoded Key/Secret (2 results - hello.c)
+        
 - Gradle:
     - High:
         - Stored Dependency Injection (1 result - build.gradle)
@@ -75,6 +70,14 @@ A damn vulnerable Kotlin Android Application
         - Debuggable App (1 result - AndroidManifest.xml)
         - Background Process Running (1 result - AndroidManifest.xml)
         - Keyboard Cache Information Leak (2 results - activity_main.xml)
+        
+- Other:
+    - Medium:
+        - Google Play Store Config Files in Repository (1 result)
+        - Keystore Files in Repository (1 result)
+        - Properties Files in Repository (2 results)
+        - Hardcoded Password (2 results - local.properties)
+        - Hardcoded Cryptographic Key (3 results - local.properties)
 
 
 # License
