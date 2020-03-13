@@ -25,6 +25,7 @@ A damn vulnerable Kotlin Android Application
         
 - C++:
     - Medium:
+        - Privacy Violation (7 results - hello.c)
         - Hardcoded Password (1 result - hello.c)
         - Hardcoded Key/Secret (2 results - hello.c)
         

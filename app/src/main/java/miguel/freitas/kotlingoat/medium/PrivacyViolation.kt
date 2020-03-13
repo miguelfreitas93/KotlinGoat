@@ -21,6 +21,8 @@ class PrivacyViolation {
     companion object {
         private val TAG: String? = PrivacyViolation::class.qualifiedName
 
+        external fun printPassword(password: String) // Use of Native Language
+
         @RequiresApi(Build.VERSION_CODES.O)
         fun init(password: String, activity: Activity){
             log(
@@ -33,6 +35,7 @@ class PrivacyViolation {
                 password,
                 activity
             )
+            printPassword(password)
         }
 
         private fun log(password: String) {
