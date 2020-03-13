@@ -23,13 +23,13 @@ A damn vulnerable Kotlin Android Application
         - Screen Caching (1 result - MainActivity.kt)
         - Passwords In Comments (16 results - PasswordsInComments.kt)
         
-- C++:
+- C++ (Native - NDK):
     - Medium:
         - Privacy Violation (7 results - hello.c)
         - Hardcoded Password (1 result - hello.c)
         - Hardcoded Key/Secret (2 results - hello.c)
         
-- Gradle:
+- Gradle (Build):
     - High:
         - Stored Dependency Injection (1 result - build.gradle)
     - Medium:
@@ -52,7 +52,7 @@ A damn vulnerable Kotlin Android Application
         - Unhandled Exception (4 results - build.gradle)
         - Stored Path Traversal (1 result - build.gradle)
         
-- XML:
+- XML (Manifest and UI):
     - High:
         - Malware Injection into File System (1 result - AndroidManifest.xml)
     - Medium:
@@ -72,7 +72,7 @@ A damn vulnerable Kotlin Android Application
         - Background Process Running (1 result - AndroidManifest.xml)
         - Keyboard Cache Information Leak (2 results - activity_main.xml)
         
-- Other:
+- Other (Source Code Repository and Configurations/Properties):
     - Medium:
         - Google Play Store Config Files in Repository (1 result)
         - Keystore Files in Repository (1 result)
