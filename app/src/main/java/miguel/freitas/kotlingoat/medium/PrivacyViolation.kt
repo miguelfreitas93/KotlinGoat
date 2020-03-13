@@ -1,4 +1,4 @@
-package miguel.freitas.kotlingoat
+package miguel.freitas.kotlingoat.medium
 
 import android.app.Activity
 import android.os.Build
@@ -9,6 +9,7 @@ import androidx.core.util.LogWriter
 import com.crashlytics.android.Crashlytics
 import com.google.firebase.crashlytics.FirebaseCrashlytics
 import io.fabric.sdk.android.Fabric
+import miguel.freitas.kotlingoat.R
 import timber.log.Timber
 import java.io.*
 import java.nio.file.Files
@@ -22,9 +23,16 @@ class PrivacyViolation {
 
         @RequiresApi(Build.VERSION_CODES.O)
         fun init(password: String, activity: Activity){
-            log(password)
-            write(password)
-            setText(password, activity)
+            log(
+                password
+            )
+            write(
+                password
+            )
+            setText(
+                password,
+                activity
+            )
         }
 
         private fun log(password: String) {
@@ -43,10 +51,12 @@ class PrivacyViolation {
             log.log(Level.ALL, password)
             log.finer(password)
             log.finest(password)
-            log.logp(Level.ALL, TAG, "log", password)
+            log.logp(Level.ALL,
+                TAG, "log", password)
             // Android Util Log
             Log.e(TAG, password)
-            Log.println(Log.ERROR, TAG, password)
+            Log.println(Log.ERROR,
+                TAG, password)
             Log.d(TAG, password)
             Log.i(TAG, password)
             Log.v(TAG, password)
@@ -64,12 +74,14 @@ class PrivacyViolation {
             Timber.wtf(password)
             //Crashalytics
             Crashlytics.log(password)
-            Crashlytics.log(Log.ERROR, TAG, password)
+            Crashlytics.log(Log.ERROR,
+                TAG, password)
             Crashlytics.logException(throw RuntimeException(password))
             Crashlytics.setString(password, password)
             Crashlytics.setUserIdentifier(password)
             //Fabric
-            fabricLogger.log(Log.ERROR, TAG, password)
+            fabricLogger.log(Log.ERROR,
+                TAG, password)
             fabricLogger.d(TAG, password)
             fabricLogger.e(TAG, password)
             fabricLogger.w(TAG, password)
@@ -84,7 +96,8 @@ class PrivacyViolation {
             firebaseLogger.w(TAG, password)
             firebaseLogger.i(TAG, password)
             firebaseLogger.v(TAG, password)
-            firebaseLogger.log(Log.ERROR, TAG, password)
+            firebaseLogger.log(Log.ERROR,
+                TAG, password)
             // SLF4J
             slf4Logger.debug(password)
             slf4Logger.error(password)

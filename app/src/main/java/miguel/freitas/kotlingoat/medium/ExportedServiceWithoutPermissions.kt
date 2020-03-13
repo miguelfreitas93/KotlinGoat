@@ -1,4 +1,4 @@
-package miguel.freitas.kotlingoat
+package miguel.freitas.kotlingoat.medium
 
 class ExportedServiceWithoutPermissions {
 

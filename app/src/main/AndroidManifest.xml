@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="miguel.freitas.kotlingoat">
 
-    <uses-sdk android:minSdkVersion="16" /> <!-- Insecure Android SDK -->
     <uses-permission android:name="android.permission.USE_FINGERPRINT" /> <!-- Failure To Implement Least Privilege -->
 
     <application
@@ -37,17 +36,17 @@
             </intent-filter>
         </activity>
         <service
-            android:name=".ExportedServiceWithoutPermissions"
+            android:name=".medium.ExportedServiceWithoutPermissions"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.NEW_OUTGOING_CALL"></action>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
             </intent-filter>
         </service>
         <!-- Exported Service Without Permissions -->
         <provider
-            android:name=".ExportedContentProviderWithoutPermissions"
+            android:name=".medium.ExportedContentProviderWithoutPermissions"
             android:authorities=".ExportedContentProvider"
-            android:exported="true"></provider>
+            android:exported="true" />
         <!-- Exported Content Provider Without Permissions -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"

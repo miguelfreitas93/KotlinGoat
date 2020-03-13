@@ -1,4 +1,4 @@
-package miguel.freitas.kotlingoat
+package miguel.freitas.kotlingoat.medium
 
 import android.content.ContentProvider
 import android.content.ContentValues

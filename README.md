@@ -9,11 +9,19 @@ A damn vulnerable Kotlin Android Application
 
     - Medium:
         - Privacy Violation (X results - PrivacyViolation.kt)
+        - Heap Inspection (X results - MainActivity.kt, PrivacyViolation.kt)
+        - Use of Native Language (4 results - UseOfNativeLanguage.kt)
+        - Process Control (1 result - ProcessControl.kt)
+        - Use of System Exit (2 result - UseOfSystemExit.kt)
+        - Insecure Random (1 result - InsecureRandom.kt)
+        - Unvalidated SSL Certificate Hostname (2 results - UnvalidatedSSLCertificateHostname.kt)
+        - Unvalidated Redirects (2 results - UnvalidatedRedirects.kt)
     - Low:
         - No Installer Verification Implemented (1 result - MainActivity.kt)
         - Missing Rooted Device Check (1 result - MainActivity.kt)
         - Missing Device Lock Verification (1 result - MainActivity.kt)
         - Screen Caching (1 result - MainActivity.kt)
+        - Passwords In Comments (16 results - PasswordsInComments.kt)
 - Other:
     - Medium:
         - Google Play Store Config Files in Repository (1 result)
@@ -21,7 +29,10 @@ A damn vulnerable Kotlin Android Application
         - Properties Files in Repository (2 results)
         - Hardcoded Password (2 results - local.properties)
         - Hardcoded Cryptographic Key (3 results - local.properties)
-        
+- C++:
+    - Medium:
+        - Hardcoded Password (1 result - hello.c)
+        - Hardcoded Key/Secret (2 results - hello.c)
 - Gradle:
     - High:
         - Stored Dependency Injection (1 result - build.gradle)
@@ -34,6 +45,7 @@ A damn vulnerable Kotlin Android Application
         - Hardcoded Password (2 results - build.gradle)
         - Proguard Not in Use (2 results - build.gradle)
         - Proguard Disabled (2 results - build.gradle)
+        - Use of Native Language (1 result - build.gradle)
     - Low:
         - Insecure SDK Version (1 result - build.gradle)
         - Debuggable App (2 results - build.gradle)
