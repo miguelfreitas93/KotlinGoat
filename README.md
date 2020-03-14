@@ -6,13 +6,14 @@ A damn vulnerable Kotlin Android Application
 
 - Kotlin:
     - High:
-
+        - Code Injection (10 results - CodeInjection.kt)
+        - Command Injection (10 results - CommandInjection.kt)
     - Medium:
         - Privacy Violation (X results - PrivacyViolation.kt)
         - Heap Inspection (X results - MainActivity.kt, PrivacyViolation.kt)
         - Use of Native Language (4 results - UseOfNativeLanguage.kt)
         - Process Control (1 result - ProcessControl.kt)
-        - Use of System Exit (2 result - UseOfSystemExit.kt)
+        - Use of System Exit (3 result - UseOfSystemExit.kt)
         - Insecure Random (1 result - InsecureRandom.kt)
         - Unvalidated SSL Certificate Hostname (2 results - UnvalidatedSSLCertificateHostname.kt)
         - Unvalidated Redirects (2 results - UnvalidatedRedirects.kt)
